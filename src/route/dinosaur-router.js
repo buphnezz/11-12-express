@@ -2,22 +2,22 @@
 
 import { Router } from 'express';
 import bodyParser from 'body-parser';
-import Note from '../model/note';
+import Dinosaur from '../model/dinosaur';
 import logger from '../lib/logger';
 
 const jsonParser = bodyParser.json();
 
-const noteRouter = new Router();
+const dinosaurRouter = new Router();
 
-noteRouter.post('/api/notes', jsonParser, (request, response) => {
+dinosaurRouter.post('/api/dinosaurs', jsonParser, (request, response) => {
   logger.log(logger.INFO, 'POST - processing a request');
   if (!request.body.title) {
     logger.log(logger.INFO, 'Responding with a 400 error code');
   }
-  return new Note(request.body).save()
-    .then((note) => {
+  return new Dinosaur(request.body).save()
+    .then((dinosaur) => {
       logger.log(logger.INFO, 'POST - responding with a 200 status code');
-      return response.json(note);
+      return response.json(dinosaur);
     })
     .catch((error) => {
       logger.log(logger.ERROR, '__POST_ERROR__');
@@ -26,17 +26,17 @@ noteRouter.post('/api/notes', jsonParser, (request, response) => {
     });
 });
 
-noteRouter.get('/api/notes/:id', (request, response) => {
+dinosaurRouter.get('/api/dinosaurs/:id', (request, response) => {
   logger.log(logger.INFO, 'GET - processing a request');
 
-  return Note.findById(request.params.id)
-    .then((note) => { // Zachary - note found OR note not found, but the id looks good
-      if (!note) {
-        logger.log(logger.INFO, 'GET - responding with a 404 status code - (!note)');
+  return Dinosaur.findById(request.params.id)
+    .then((dinosaur) => { // Zachary - dinosaur found OR dinosaur not found, but the id looks good
+      if (!dinosaur) {
+        logger.log(logger.INFO, 'GET - responding with a 404 status code - (!dinosaur)');
         return response.sendStatus(404);
       }
       logger.log(logger.INFO, 'GET - responding with a 200 status code');
-      return response.json(note);
+      return response.json(dinosaur);
     })
     .catch((error) => { // Zachary - mongodb error or parsing id error
       if (error.message.toLowerCase().indexOf('cast to objectid failed') > -1) {
@@ -50,4 +50,4 @@ noteRouter.get('/api/notes/:id', (request, response) => {
     });
 });
 
-export default noteRouter;
+export default dinosaurRouter;

@@ -2,7 +2,7 @@
 
 import mongoose from 'mongoose';
 
-const noteSchema = mongoose.Schema({
+const dinosaurSchema = mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -20,5 +20,5 @@ const noteSchema = mongoose.Schema({
 });
 
   // Zachary Mongoose wants to create a model out of schema
-export default mongoose.model('note', noteSchema);
+export default mongoose.model('dinosaur', dinosaurSchema);
   
