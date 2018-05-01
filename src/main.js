@@ -1,5 +1,5 @@
 'use strict';
 
-const server = require('./lib/server');
+const server = require('../src/lib/server');
 
 server.start();

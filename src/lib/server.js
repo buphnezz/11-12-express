@@ -19,16 +19,16 @@ app.all('*', (request, response) => {
 
 const startServer = () => {
   return mongoose.connect(process.env.MONGODB_URI)
-  .then(() => {
-    server = app.listen(process.env.PORT, () => {
-      logger.log(logger.INFO, `Server is listening on port ${process.env.PORT}`);
+    .then(() => {
+      server = app.listen(process.env.PORT, () => {
+        logger.log(logger.INFO, `Server is listening on port ${process.env.PORT}`);
+      });
     });
-  });
 };
 
 const stopServer = () => {
   return mongoose.disconnect()
-    .then() => {
+    .then(() => {
       server.close(() => {
         logger.log(logger.INFO, 'Server is off');
       });

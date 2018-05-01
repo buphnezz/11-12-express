@@ -2,7 +2,8 @@
 
 import { Router } from 'express';
 import bodyParser from 'body-parser';
-import Note from '../lib/logger';
+import Note from '../model/note';
+import logger from '../lib/logger';
 
 const jsonParser = bodyParser.json();
 
@@ -36,10 +37,16 @@ noteRouter.get('/api/notes/:id', (request, response) => {
       }
       logger.log(logger.INFO, 'GET - responding with a 200 status code');
       return response.json(note);
-    }
-    logger.log(logger.ERROR, '__GET_ERROR__ Returning a 500 status code');
-    logger.log(logger.ERROR, error);
-    return response.sendStatus(500);
+    })
+    .catch((error) => { // Zachary - mongodb error or parsing id error
+      if (error.message.toLowerCase().indexOf('cast to objectid failed') > -1) {
+        logger.log(logger.INFO, 'GET - responding with a 404 status code - objectId');
+        logger.log(logger.VERBOSE, `Could not parse the specific object id ${request.params.id}`);
+        return response.sendStatus(404);
+      }
+      logger.log(logger.ERROR, '__GET_ERROR__ Returning a 500 status code');
+      logger.log(logger.ERROR, error);
+      return response.sendStatus(500);
     });
 });
 

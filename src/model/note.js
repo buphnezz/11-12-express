@@ -17,8 +17,8 @@ const noteSchema = mongoose.Schema({
     type: Date,
     default: () => new Date(),
   },
-  });
+});
 
   // Zachary Mongoose wants to create a model out of schema
-  export default mongoose.model('note', noteSchema);
+export default mongoose.model('note', noteSchema);
   
