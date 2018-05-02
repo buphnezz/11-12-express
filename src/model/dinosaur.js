@@ -3,19 +3,24 @@
 import mongoose from 'mongoose';
 
 const dinosaurSchema = mongoose.Schema({
-  title: {
+  dinoname: {
     type: String,
     required: true,
     unique: true,
   },
-  content: {
+  dinocontent: {
     type: String,
     required: true,
     minlength: 10,
   },
-  timestamp: {
+  dinotimestamp: {
     type: Date,
     default: () => new Date(),
+  },
+  dinomite: {
+    type: String,
+    required: true,
+    minlength: 10,
   },
 });
 

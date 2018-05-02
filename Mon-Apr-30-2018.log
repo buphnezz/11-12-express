@@ -1,0 +1,288 @@
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__POST_ERROR__"}
+{"errors":{"dinoname":{"message":"Path `dinoname` is required.","name":"ValidatorError","properties":{"message":"Path `{PATH}` is required.","type":"required","path":"dinoname"},"kind":"required","path":"dinoname","$isValidatorError":true}},"_message":"dinosaur validation failed","message":"dinosaur validation failed: dinoname: Path `dinoname` is required.","name":"ValidationError","level":"error"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"POST - processing a request"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"DELETE - processing a request"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"GET - processing a request"}
+{"level":"info","message":"GET - responding with a 404 status code - objectId"}
+{"level":"verbose","message":"Could not parse the specific object id ThisIsAnInvalidId"}
+{"level":"info","message":"Server is off"}
