@@ -20,6 +20,7 @@
     "babel-eslint": "^8.2.3",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
+    "bluebird": "^3.5.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
@@ -32,7 +33,9 @@
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "faker": "^4.1.0",
-    "mongoose": "^5.0.16",
+    "http-errors": "^1.6.3",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
     "winston": "^3.0.0-rc5"
   }
 }
