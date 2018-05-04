@@ -391,3 +391,24 @@
 {"level":"info","message":"Processing a PUT on /api/dinosaurs/5ae9211113ad792e081ec791"}
 {"level":"info","message":"GET - responding with a 200 status code"}
 {"level":"info","message":"Server is off"}
+{"level":"info","message":"Server is listening on port 7000"}
+{"level":"info","message":"Processing a POST on /api/dinosaurs"}
+{"level":"info","message":"POST - responding with a 200 status code"}
+{"level":"info","message":"Processing a POST on /api/dinosaurs"}
+{"level":"info","message":"Responding with a 400 error code"}
+{"level":"error","message":"__ERROR_MIDDLEWARE))"}
+{"message":"title is required","level":"error"}
+{"level":"info","message":"Responding with a 400 code and message title is required"}
+{"level":"info","message":"Processing a GET on /api/dinosaurs/5ae926b979a35200e8862ca4"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"Processing a GET on /api/dinosaurs/ThisIsAnInvalidId"}
+{"level":"error","message":"__ERROR_MIDDLEWARE))"}
+{"message":"Cast to ObjectId failed for value \"ThisIsAnInvalidId\" at path \"_id\" for model \"dinosaur\"","name":"CastError","stringValue":"\"ThisIsAnInvalidId\"","kind":"ObjectId","value":"ThisIsAnInvalidId","path":"_id","level":"error"}
+{"level":"info","message":"Processing a DELETE on /api/dinosaurs/5ae926b979a35200e8862ca5"}
+{"level":"info","message":"DELETE - responding with a 200 status code"}
+{"level":"info","message":"Processing a GET on /api/dinosaurs/ThisIsAnInvalidId"}
+{"level":"error","message":"__ERROR_MIDDLEWARE))"}
+{"message":"Cast to ObjectId failed for value \"ThisIsAnInvalidId\" at path \"_id\" for model \"dinosaur\"","name":"CastError","stringValue":"\"ThisIsAnInvalidId\"","kind":"ObjectId","value":"ThisIsAnInvalidId","path":"_id","level":"error"}
+{"level":"info","message":"Processing a PUT on /api/dinosaurs/5ae926b979a35200e8862ca6"}
+{"level":"info","message":"GET - responding with a 200 status code"}
+{"level":"info","message":"Server is off"}
