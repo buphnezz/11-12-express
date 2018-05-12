@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <coverage generated="1526166964873" clover="3.2.0">
   <project timestamp="1526166964873" name="All files">
@@ -121,3 +122,5 @@
     </metrics>
   </project>
 </coverage>
+=======
+>>>>>>> 637147db63d4f8c0d79ec1c50e16356495cb0422
