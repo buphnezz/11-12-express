@@ -2,7 +2,6 @@
 
 import logger from './logger';
 
-
 export default (error, request, response, next) => { // eslint-disable-line no-unused-vars
   logger.log(logger.ERROR, '__ERROR_MIDDLEWARE))');
   logger.log(logger.ERROR, error);
