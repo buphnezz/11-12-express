@@ -23,6 +23,7 @@ describe('/api/dinosaurs', () => {
   beforeAll(startServer);
   afterAll(stopServer);
   afterEach(() => Dinosaur.remove({}));
+  
   test('POST - It should respond with a 200 status ', () => {
     const dinosaurToPost = {
       dinoname: faker.lorem.words(10),

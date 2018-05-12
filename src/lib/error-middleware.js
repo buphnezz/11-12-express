@@ -2,7 +2,6 @@
 
 import logger from './logger';
 
-
 export default (error, request, response, next) => { // eslint-disable-line no-unused-vars
   logger.log(logger.ERROR, '__ERROR_MIDDLEWARE))');
   logger.log(logger.ERROR, error);
@@ -17,7 +16,7 @@ export default (error, request, response, next) => { // eslint-disable-line no-u
   // Zachary - I know if we are here, a different type of error has occurred. 
   const errorMessage = error.message.toLowerCase();
 
-  if (errorMessage.incudes('objectid failed')) {
+  if (errorMessage.includes('objectid failed')) {
     logger.log(logger.INFO, 'Responding with a 404 code');
     return response.sendStatus(404);
   }
