@@ -23,39 +23,30 @@ dinosaurRouter.post('/api/dinosaurs', jsonParser, (request, response, next) => {
     .catch(next);
 });
 
-// dinosaurRouter.get('/api/dinosaurs/:id?', jsonParser, (request, response, next) => {
-//   return Dinosaur.findById(request.params.id)
-//     .then((dinosaur) => { // Zachary - dinosaur found OR dinosaur not 
-// found, but the id looks good
-//       if (!dinosaur) {
+// dinosaurRouter.get('/api/dinosaurs', jsonParser, (request, response, next) => {
+//   return Dinosaur.find()
+//     .then((dinosaurArray) => {
+//       if (!dinosaurArray) {
 //         logger.log(logger.INFO, 'GET - responding with a 404 status code - (!dinosaur)');
 //         return next(new HttpErrors(404, 'dinosaur not found'));
 //       }
 //       logger.log(logger.INFO, 'GET - responding with a 200 status code');
-//       return response.json(dinosaur);
+//       return response.json(dinosaurArray);
 //     })
 //     .catch(next);
 // });
-
-dinosaurRouter.get('/api/dinosaurs/:id?', (req, res, next) => {
-  if (!req.params.id) {
-    logger.log(logger.INFO, 'GET ALL: processing a request');
-    Dinosaur.find()
-      .then((dinosaurs) => {
-        logger.log(logger.INFO, 'GET ALL: 200 status');
-        return res.json(dinosaurs);
-      })
-      .catch(next);
-  } else {
-    logger.log(logger.INFO, 'GET ONE: processing a request');
-    Dinosaur.findById(req.params.id)
-      .then((dinosaur) => {
-        if (!dinosaur) return next(new HttpErrors(404, 'GET ONE: dinosaur not found'));
-        logger.log(logger.INFO, 'GET ONE: 200 status');
-        return res.json(dinosaur);
-      })
-      .catch(next);
-  }
+  
+dinosaurRouter.get('/api/dinosaurs/:id', (request, response, next) => {
+  return Dinosaur.findById(request.params.id)
+    .then((dinosaur) => {
+      if (!dinosaur) {
+        logger.log(logger.INFO, 'GET - responding with a 404 status code - (!dinosaur)');
+        return next(new HttpErrors(404, 'dinosaur not found'));
+      }
+      logger.log(logger.INFO, 'GET - responding with a 200 status code');
+      return response.json(dinosaur);
+    })
+    .catch(next);
 });
 
 dinosaurRouter.put('/api/dinosaurs/:id', jsonParser, (request, response, next) => {
@@ -76,12 +67,16 @@ dinosaurRouter.put('/api/dinosaurs/:id', jsonParser, (request, response, next) =
 dinosaurRouter.delete('/api/dinosaurs/:id', (request, response, next) => {
   return Dinosaur.findByIdAndRemove(request.params.id)
     .then((dinosaur) => { // Zachary - dinosaur found OR dinosaur not found, but the id looks good
+      if (!dinosaur.id) {
+        logger.log(logger.INFO, 'DELETE - responding with a 400 status code');
+        return next(new HttpErrors(400, 'dinosaur not found'));
+      }
       if (!dinosaur) {
-        logger.log(logger.INFO, 'DELETE - responding with a 404 status code - (!dinosaur)');
+        logger.log(logger.INFO, 'DELETE - responding with a 404 status code');
         return next(new HttpErrors(404, 'dinosaur not found'));
       }
-      logger.log(logger.INFO, 'DELETE - responding with a 200 status code');
-      return response.json(dinosaur);
+      logger.log(logger.INFO, 'DELETE - responding with a 204 status code');
+      return next(new HttpErrors(204, 'no content'));
     })
     .catch(next);
 });

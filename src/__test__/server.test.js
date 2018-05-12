@@ -57,8 +57,8 @@ describe('/api/dinosaurs', () => {
   });
   describe('GET /api/dinosaurs', () => {
     test('should respond with 200 if there are no errors', () => {
-      let dinosaurToTest = null; // Zachary - preserving the dinosaur because of scope rules
-      return pCreateDinosaurMock() // Zachary - test only a GET request 
+      let dinosaurToTest = null;
+      return pCreateDinosaurMock()
         .then((dinosaur) => {
           dinosaurToTest = dinosaur;
           return superagent.get(`${apiURL}/${dinosaur._id}`);
@@ -72,55 +72,23 @@ describe('/api/dinosaurs', () => {
           expect(response.body.dinotimestamp).toBeTruthy();
         });
     });
+  });
+  describe('DELETE /api/dinosaurs', () => {
+    test('should respond with 204 if there are no errors', () => {
+      return pCreateDinosaurMock()
+        .then((dinosaur) => {
+          return superagent.delete(`${apiURL}/${dinosaur._id}`);
+        })
+        .then((response) => {
+          expect(response.status).toEqual(204);
+        });
+    });
     test('should respond with 404 if there is no dinosaur to be found', () => {
-      return superagent.get(`${apiURL}/ThisIsAnInvalidId`)
-        .then(Promise.reject) // Zachary - testing for a failure
+      return superagent.get(`${apiURL}/NotAnID`)
+        .then(Promise.reject)
         .catch((response) => {
           expect(response.status).toEqual(404);
         });
     });
   });
-  describe('DELETE /api/dinosaurs', () => {
-    test('should respond with 200 if there are no errors', () => {
-      let dinosaurToTest = null; // Zachary - preserving the dinosaur because of scope rules
-      return pCreateDinosaurMock() // Zachary - test only a DELETE request 
-        .then((dinosaur) => {
-          dinosaurToTest = dinosaur;
-          return superagent.delete(`${apiURL}/${dinosaur._id}`);
-        })
-        .then((response) => {
-          expect(response.status).toEqual(200);
-          expect(response.body.dinoname).toEqual(dinosaurToTest.dinoname);
-          expect(response.body.dinocontent).toEqual(dinosaurToTest.dinocontent);
-          expect(response.body.dinomite).toEqual(dinosaurToTest.dinomite);
-          expect(response.body._id).toBeTruthy();
-          expect(response.body.dinotimestamp).toBeTruthy();
-        });
-    });
-  });
-  test('should respond with 404 if there is no dinosaur to be found', () => {
-    return superagent.get(`${apiURL}/ThisIsAnInvalidId`)
-      .then(Promise.reject) // Zachary - testing for a failure
-      .catch((response) => {
-        expect(response.status).toEqual(404);
-      });
-  });
-  describe('PUT /api/dinosaurs', () => {
-    test('should update a dinosaur and return a 200 status code', () => {
-      let dinosaurToUpdate = null;
-      return pCreateDinosaurMock()
-        .then((dinosaurMock) => {
-          dinosaurToUpdate = dinosaurMock;
-          // Zachary - Here, I know I have a new dinosaur in my db
-          return superagent.put(`${apiURL}/${dinosaurMock._id}`)
-            .send({ dinoname: 'Harness the power!' });
-        })
-        .then((response) => {
-          expect(response.status).toEqual(200);
-          expect(response.body.dinoname).toEqual('Harness the power!');
-          expect(response.body.dinocontent).toEqual(dinosaurToUpdate.dinocontent);
-          expect(response.body._id).toEqual(dinosaurToUpdate._id.toString());
-        });
-    });
-  });
-}); 
+});
