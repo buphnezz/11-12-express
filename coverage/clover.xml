@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1526166964873" clover="3.2.0">
-  <project timestamp="1526166964873" name="All files">
+<coverage generated="1526182569168" clover="3.2.0">
+  <project timestamp="1526182569168" name="All files">
     <metrics statements="83" coveredstatements="55" conditionals="20" coveredconditionals="8" methods="18" coveredmethods="14" elements="121" coveredelements="77" complexity="0" loc="83" ncloc="83" packages="4" files="7" classes="7">
       <package name="__test__.lib">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -122,5 +121,3 @@
     </metrics>
   </project>
 </coverage>
-=======
->>>>>>> 637147db63d4f8c0d79ec1c50e16356495cb0422
